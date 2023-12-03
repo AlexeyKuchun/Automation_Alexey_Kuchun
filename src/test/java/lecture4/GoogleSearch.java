@@ -22,7 +22,6 @@ public class GoogleSearch
     {
         driver = new ChromeDriver();
         driver.get("https://www.google.by/");
-
     }
 
     @Test
@@ -43,7 +42,6 @@ public class GoogleSearch
         searchBar = driver.findElement(By.cssSelector("[type='search']"));
         searchBar.clear();
         searchBar.sendKeys("Hello, world",Keys.ENTER);
-
     }
     @AfterTest
     public void tearDown()
